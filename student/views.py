@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse, JsonResponse
 from . models import stud
 # Create your views here.
+# These are the python functions 
 def index(request):
     students = stud.objects.all().filter(roll="36754")
     context = {'students': students}

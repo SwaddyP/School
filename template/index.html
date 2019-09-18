@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Students</h1>
+        <br>
+        {% for i in students %}
+            <h3> {{i.naam}} {{i.roll}} semester-{{i.sem}}</h3>
+        {% endfor %}
+        <br>
+    </body>
+</html>

@@ -1,0 +1,11 @@
+<html>
+    <body>
+        <form method = "post">
+        {% csrf_token%}
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="number" name="roll" placeholder="Roll" required>
+        <input type="number" name="sem" placeholder="Semester" required>
+        <input type="submit" value="submit">
+        </form>
+    </body>
+</html>

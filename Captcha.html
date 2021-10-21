@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Confirmation page to download the Form</title>
+    <style>
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: small;
+        }
+
+        div.verification {
+            margin: auto;
+            padding: auto;
+            box-shadow: black;
+            text-align: center;
+        }
+
+        div.verification h2 {
+            background: #efefef;
+            margin-top: 0px;
+            padding: 10px;
+
+        }
+
+        div.verification input {
+            display: block;
+            width: 30%;
+            margin: 10px auto;
+        }
+    </style>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+</head>
+
+<body>
+    <div class="verification">
+        <form method="POST" action="">
+            <h2>Verification to eliminate Bot accesses</h2>
+            <input type="text" name="Captcha" placeholder="Enter you Captcha Here!">
+            <input type="submit" name="submit" value="Submit">
+            <div class="g-recaptcha" data-sitekey="6LdzIt0UAAAAAFucpXtRCMsM33goretg56QldL7v"></div>
+        </form>
+    </div>
+</body>
+
+</html>
